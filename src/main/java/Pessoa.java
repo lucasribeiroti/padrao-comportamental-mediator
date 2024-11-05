@@ -1,6 +1,6 @@
 package src.main.java;
 
-public class Pessoa {
+public abstract class Pessoa {
 
     public String elogiarRH(String mensagem) {
         return FeedbackCentral.getInstancia().receberElogioRH(mensagem);
