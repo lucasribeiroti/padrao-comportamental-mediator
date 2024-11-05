@@ -2,15 +2,15 @@ package src.main.java;
 
 public class Pessoa {
 
-    public String enviarReclamacao(Setor setor, String mensagem) {
-        return ControleQualidade.getInstancia().receberReclamacao(setor, mensagem);
+    public String elogiarRH(String mensagem) {
+        return FeedbackCentral.getInstancia().receberElogioRH(mensagem);
     }
 
-    public String enviarElogio(Setor setor, String mensagem) {
-        return ControleQualidade.getInstancia().receberElogio(setor, mensagem);
+    public String reclamarRH(String mensagem) {
+        return FeedbackCentral.getInstancia().receberReclamacaoRH(mensagem);
     }
 
-    public String enviarSugestao(Setor setor, String mensagem) {
-        return ControleQualidade.getInstancia().receberSugestao(setor, mensagem);
+    public String sugerirRH(String mensagem) {
+        return FeedbackCentral.getInstancia().receberSugestaoRH(mensagem);
     }
 }
